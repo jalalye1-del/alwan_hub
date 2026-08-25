@@ -1,0 +1,1 @@
+enum FolderType { system, user }
