@@ -62,8 +62,8 @@ export default function AlwanHero() {
           {/* RIGHT SECTION - Empty space for presenters */}
           <div className="hidden lg:block lg:w-[35%]" />
 
-          {/* CENTER SECTION - Text, Stats, Buttons - Original Position */}
-          <div className="flex-1 flex flex-col justify-center space-y-6 max-w-sm">
+          {/* CENTER SECTION - Text, Stats, Buttons - Moved Down 8% */}
+          <div className="flex-1 flex flex-col justify-center space-y-6 max-w-sm translate-y-[8%]">
             {/* Title */}
             <div className="space-y-2">
               <h2 className="text-2xl font-black text-[#E35335] drop-shadow-lg">
@@ -153,8 +153,8 @@ export default function AlwanHero() {
               </button>
             </div>
 
-            {/* Glass Cards - News & Horoscope (Horizontal, 150mm x 20mm each) - Moved Down 10% */}
-            <div className="flex items-center gap-3 flex-wrap mt-3 translate-y-[10%]">
+            {/* Glass Cards - News & Horoscope (Horizontal, 150mm x 20mm each) - Moved Down 20% total */}
+            <div className="flex items-center gap-3 flex-wrap mt-3 translate-y-[20%]">
               {/* Trending News Card - 150mm x 20mm */}
               <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-3 py-1.5 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '150mm', height: '20mm', maxWidth: '567px', maxHeight: '76px', flexShrink: 0 }}>
                 <div className="absolute top-0 right-0 w-10 h-10 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full blur-xl -translate-y-1/2 translate-x-1/2" />
