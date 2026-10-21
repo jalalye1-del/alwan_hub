@@ -62,8 +62,8 @@ export default function AlwanHero() {
           {/* RIGHT SECTION - Empty space for presenters */}
           <div className="hidden lg:block lg:w-[35%]" />
 
-          {/* CENTER SECTION - Text, Stats, Buttons - Moved Down 8% */}
-          <div className="flex-1 flex flex-col justify-center space-y-6 max-w-sm translate-y-[8%]">
+          {/* CENTER SECTION - Text, Stats, Buttons - Moved Down 18% total */}
+          <div className="flex-1 flex flex-col justify-center space-y-6 max-w-sm translate-y-[18%]">
             {/* Title */}
             <div className="space-y-2">
               <h2 className="text-2xl font-black text-[#E35335] drop-shadow-lg">
@@ -116,8 +116,8 @@ export default function AlwanHero() {
 
             {/* Action Buttons */}
             <div className="flex items-center gap-3">
-              {/* Heart */}
-              <button className="w-12 h-12 rounded-full bg-[#1D00CD] text-white flex items-center justify-center hover:bg-[#1200A8] transition-colors shadow-xl flex-shrink-0">
+              {/* Heart - Colored like share button */}
+              <button className="w-12 h-12 rounded-full bg-white/95 backdrop-blur-sm text-[#1D00CD] flex items-center justify-center hover:bg-white transition-colors shadow-xl flex-shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
@@ -153,34 +153,34 @@ export default function AlwanHero() {
               </button>
             </div>
 
-            {/* Glass Cards - News & Horoscope (Horizontal, 150mm x 20mm each) - Moved Down 20% total */}
-            <div className="flex items-center gap-3 flex-wrap mt-3 translate-y-[20%]">
-              {/* Trending News Card - 150mm x 20mm */}
-              <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-3 py-1.5 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '150mm', height: '20mm', maxWidth: '567px', maxHeight: '76px', flexShrink: 0 }}>
-                <div className="absolute top-0 right-0 w-10 h-10 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full blur-xl -translate-y-1/2 translate-x-1/2" />
-                <div className="relative flex items-center gap-2 h-full">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center shadow-lg flex-shrink-0">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {/* Glass Cards - News & Horoscope (Horizontal, 110mm x 17mm each) - 8% down */}
+            <div className="flex items-center gap-3 flex-wrap translate-y-[8%]" style={{ position: 'relative', zIndex: 1 }}>
+              {/* Trending News Card - 110mm x 17mm */}
+              <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-2 py-1 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '110mm', height: '17mm', maxWidth: '416px', maxHeight: '64px', flexShrink: 0 }}>
+                <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full blur-lg -translate-y-1/2 translate-x-1/2" />
+                <div className="relative flex items-center gap-1.5 h-full">
+                  <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center shadow-lg flex-shrink-0">
+                    <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xs font-black text-gray-900 leading-tight whitespace-nowrap">الأخــبـــار الـــرائــجـــة</h3>
+                    <h3 className="text-[10px] font-black text-gray-900 leading-tight whitespace-nowrap">الأخــبـــار الـــرائــجـــة</h3>
                   </div>
                 </div>
               </div>
 
-              {/* Daily Horoscope Card - 150mm x 20mm */}
-              <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-3 py-1.5 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '150mm', height: '20mm', maxWidth: '567px', maxHeight: '76px', flexShrink: 0 }}>
-                <div className="absolute top-0 right-0 w-10 h-10 bg-gradient-to-br from-indigo-400/30 to-purple-400/30 rounded-full blur-xl -translate-y-1/2 translate-x-1/2" />
-                <div className="relative flex items-center gap-2 h-full">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg flex-shrink-0">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {/* Daily Horoscope Card - 110mm x 17mm */}
+              <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-2 py-1 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '110mm', height: '17mm', maxWidth: '416px', maxHeight: '64px', flexShrink: 0 }}>
+                <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-br from-indigo-400/30 to-purple-400/30 rounded-full blur-lg -translate-y-1/2 translate-x-1/2" />
+                <div className="relative flex items-center gap-1.5 h-full">
+                  <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg flex-shrink-0">
+                    <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xs font-black text-gray-900 leading-tight whitespace-nowrap">الأبــــراج الــيـــومــيـــة</h3>
+                    <h3 className="text-[10px] font-black text-gray-900 leading-tight whitespace-nowrap">الأبــــراج الــيـــومــيـــة</h3>
                   </div>
                 </div>
               </div>
