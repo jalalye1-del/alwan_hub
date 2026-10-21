@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ألوان هَب - شاشة ترحيبية</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      overflow: hidden;
+    }
+    .splash {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      overflow: hidden;
+      background: white;
+      transition: all 1s ease;
+    }
+    .splash.exiting {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+    .bg-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #eff6ff 0%, white 50%, #f5f3ff 100%);
+    }
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.3;
+      animation: pulse 3s ease-in-out infinite;
+    }
+    .circle-1 {
+      top: 25%;
+      right: 25%;
+      width: 256px;
+      height: 256px;
+      background: #bfdbfe;
+    }
+    .circle-2 {
+      bottom: 25%;
+      left: 25%;
+      width: 384px;
+      height: 384px;
+      background: #e9d5ff;
+      animation-delay: 1s;
+    }
+    .circle-3 {
+      top: 50%;
+      left: 50%;
+      width: 192px;
+      height: 192px;
+      background: #fde68a;
+      animation-delay: 2s;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.3; }
+      50% { transform: scale(1.2); opacity: 0.5; }
+    }
+    .content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+    .gif-container {
+      position: absolute;
+      inset: 0;
+    }
+    .gif-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6), transparent, transparent);
+    }
+    .text-container {
+      position: absolute;
+      bottom: 80px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 0 16px;
+    }
+    .title {
+      font-size: 64px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 16px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+    .subtitle {
+      font-size: 24px;
+      color: rgba(255,255,255,0.9);
+      font-weight: 300;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+    .dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 32px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      animation: bounce 1.4s ease-in-out infinite;
+    }
+    .dot-1 { background: #3b82f6; animation-delay: 0s; }
+    .dot-2 { background: #a855f7; animation-delay: 0.15s; }
+    .dot-3 { background: #fbbf24; animation-delay: 0.3s; }
+    @keyframes bounce {
+      0%, 80%, 100% { transform: scale(0.6); }
+      40% { transform: scale(1.2); }
+    }
+    @media (max-width: 768px) {
+      .title { font-size: 42px; }
+      .subtitle { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="splash" id="splash">
+    <div class="bg-gradient"></div>
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+    <div class="content">
+      <div class="gif-container">
+        <img src="images/splash.gif" alt="Alwan Hub">
+      </div>
+      <div class="overlay"></div>
+      <div class="text-container">
+        <h1 class="title">ألوان هَب</h1>
+        <p class="subtitle">ألوان تنبض بالحياة</p>
+        <div class="dots">
+          <div class="dot dot-1"></div>
+          <div class="dot dot-2"></div>
+          <div class="dot dot-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('splash').classList.add('exiting');
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 1000);
+    }, 4500);
+  </script>
+</body>
+</html>
