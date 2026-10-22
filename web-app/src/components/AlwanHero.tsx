@@ -153,10 +153,10 @@ export default function AlwanHero() {
               </button>
             </div>
 
-            {/* Glass Cards - News & Horoscope (Horizontal, 80mm x 17mm each) - 8% down */}
+            {/* Glass Cards - News & Horoscope (Horizontal, 100mm x 17mm each) - 8% down */}
             <div className="flex items-center gap-3 flex-wrap translate-y-[8%]" style={{ position: 'relative', zIndex: 1 }}>
-              {/* Trending News Card - 80mm x 17mm */}
-              <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-2 py-1 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '80mm', height: '17mm', maxWidth: '302px', maxHeight: '64px', flexShrink: 0 }}>
+              {/* Trending News Card - 100mm x 17mm */}
+              <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-2 py-1 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '100mm', height: '17mm', maxWidth: '378px', maxHeight: '64px', flexShrink: 0 }}>
                 <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full blur-lg -translate-y-1/2 translate-x-1/2" />
                 <div className="relative flex items-center gap-1.5 h-full">
                   <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center shadow-lg flex-shrink-0">
@@ -165,13 +165,13 @@ export default function AlwanHero() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-[12px] font-black text-gray-900 leading-tight whitespace-nowrap">الأخــبـــار الـــرائــجـــة</h3>
+                    <h3 className="text-[14px] font-black text-gray-900 leading-tight whitespace-nowrap">الأخــبـــار الـــرائــجـــة</h3>
                   </div>
                 </div>
               </div>
 
-              {/* Daily Horoscope Card - 80mm x 17mm */}
-              <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-2 py-1 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '80mm', height: '17mm', maxWidth: '302px', maxHeight: '64px', flexShrink: 0 }}>
+              {/* Daily Horoscope Card - 100mm x 17mm */}
+              <div className="relative overflow-hidden rounded-xl bg-white/40 backdrop-blur-xl border border-white/50 px-2 py-1 shadow-[0_4px_20px_rgba(167,139,250,0.3)] hover:shadow-[0_8px_30px_rgba(167,139,250,0.5)] transition-all duration-300 cursor-pointer" style={{ width: '100mm', height: '17mm', maxWidth: '378px', maxHeight: '64px', flexShrink: 0 }}>
                 <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-br from-indigo-400/30 to-purple-400/30 rounded-full blur-lg -translate-y-1/2 translate-x-1/2" />
                 <div className="relative flex items-center gap-1.5 h-full">
                   <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg flex-shrink-0">
@@ -180,7 +180,7 @@ export default function AlwanHero() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-[12px] font-black text-gray-900 leading-tight whitespace-nowrap">الأبــــراج الــيـــومــيـــة</h3>
+                    <h3 className="text-[14px] font-black text-gray-900 leading-tight whitespace-nowrap">الأبــــراج الــيـــومــيـــة</h3>
                   </div>
                 </div>
               </div>
