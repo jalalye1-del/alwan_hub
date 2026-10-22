@@ -165,7 +165,7 @@ export default function AlwanHero() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-[9px] font-black text-gray-900 leading-tight whitespace-nowrap">الأخــبـــار الـــرائــجـــة</h3>
+                    <h3 className="text-[12px] font-black text-gray-900 leading-tight whitespace-nowrap">الأخــبـــار الـــرائــجـــة</h3>
                   </div>
                 </div>
               </div>
@@ -180,7 +180,7 @@ export default function AlwanHero() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-[9px] font-black text-gray-900 leading-tight whitespace-nowrap">الأبــــراج الــيـــومــيـــة</h3>
+                    <h3 className="text-[12px] font-black text-gray-900 leading-tight whitespace-nowrap">الأبــــراج الــيـــومــيـــة</h3>
                   </div>
                 </div>
               </div>
