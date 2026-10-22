@@ -62,8 +62,8 @@ export default function AlwanHero() {
           {/* RIGHT SECTION - Empty space for presenters */}
           <div className="hidden lg:block lg:w-[35%]" />
 
-          {/* CENTER SECTION - Text, Stats, Buttons - Moved Down 18% total */}
-          <div className="flex-1 flex flex-col justify-center space-y-6 max-w-sm translate-y-[18%]">
+          {/* CENTER SECTION - Text, Stats, Buttons - Moved Up 6% + Left 6% from current */}
+          <div className="flex-1 flex flex-col justify-center space-y-6 max-w-sm -translate-x-[6%] translate-y-[12%]">
             {/* Title */}
             <div className="space-y-2">
               <h2 className="text-2xl font-black text-[#E35335] drop-shadow-lg">
